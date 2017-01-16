@@ -21,3 +21,6 @@ override_dh_install:
 	install -d debian/agilent33220a-dev/usr/lib/epics/protocol
 	install -m 644 agilent33220AApp/protocol/agilent33220A.proto debian/agilent33220a-dev/usr/lib/epics/protocol/
 	dh_install --fail-missing
+	# It seems like for single binary packages the configure directory
+	# doesn't get removed by dh_epics_postinstall. So we do it manually:
+	rm -rf debian/agilent33220a-dev/usr/lib/epics/configure
