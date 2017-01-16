@@ -1,15 +1,17 @@
 Source: agilent33220a
-Section: unknown
+Section: libs
 Priority: optional
 Maintainer: Martin Konrad <konrad@frib.msu.edu>
-Build-Depends: debhelper (>=9)
-Standards-Version: 3.9.8
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/agilent33220a.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/agilent33220a.git
+Build-Depends: debhelper (>=9), epics-debhelper (>= 8.14~),
+               epics-dev
+Standards-Version: 3.9.6
+Homepage: http://controls.diamond.ac.uk/downloads/support/agilent33220A/
+Vcs-Git: https://stash.frib.msu.edu/scm/rf/agilent3320a.git
+Vcs-Browser: https://stash.frib.msu.edu/projects/RF/repos/agilent3320a
 
-Package: agilent33220a
+Package: agilent33220a-dev
+Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${epics:Depends}
+Description: EPICS support for Agilent 33220A
+ Stream Device support for Agilent 33220A arbitrary waveform generator.
