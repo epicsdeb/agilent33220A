@@ -26,35 +26,35 @@ include $(TOP)/configure/CONFIG
 # Build an IOC Application
 # ------------------------
 
-PROD_IOC = agilent33220A
+#PROD_IOC = agilent33220A
 
 # agilent33220A.dbd will be installed into <top>/dbd
-DBD += agilent33220A.dbd
+#DBD += agilent33220A.dbd
 
 # agilent33220A.dbd will be created from these files
-agilent33220A_DBD += base.dbd
+#agilent33220A_DBD += base.dbd
 #agilent33220A_DBD += xxx.dbd
 
 # agilent33220A_registerRecordDeviceDriver.cpp will be created
 # agilent33220A.dbd
-agilent33220A_SRCS += agilent33220A_registerRecordDeviceDriver.cpp
+#agilent33220A_SRCS += agilent33220A_registerRecordDeviceDriver.cpp
 
 # These two lines are needed for non-vxWorks builds, such as Linux
-agilent33220A_SRCS_DEFAULT += agilent33220AMain.cpp
-agilent33220A_SRCS_vxWorks += -nil-
+#agilent33220A_SRCS_DEFAULT += agilent33220AMain.cpp
+#agilent33220A_SRCS_vxWorks += -nil-
 
 # Add locally compiled object code
 #agilent33220A_SRCS +=
 
 # The following adds object code from base/src/vxWorks
-agilent33220A_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
+#agilent33220A_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
 
 # This line says that this IOC Application depends on the
 # xxx Support Module
 #agilent33220A_LIBS += xxx
 
 # We need to link this IOC Application against the EPICS Base libraries
-agilent33220A_LIBS += $(EPICS_BASE_IOC_LIBS)
+#agilent33220A_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 # ---------------------------------------------------
 
