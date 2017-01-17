@@ -6,8 +6,8 @@ Build-Depends: debhelper (>=9), epics-debhelper (>= 8.14~),
                epics-dev
 Standards-Version: 3.9.6
 Homepage: http://controls.diamond.ac.uk/downloads/support/agilent33220A/
-Vcs-Git: https://stash.frib.msu.edu/scm/rf/agilent3320a.git
-Vcs-Browser: https://stash.frib.msu.edu/projects/RF/repos/agilent3320a
+Vcs-Git: https://github.com/epicsdeb/agilent33220A.git
+Vcs-Browser: https://github.com/epicsdeb/agilent33220A
 
 Package: agilent33220a-dev
 Section: libdevel
