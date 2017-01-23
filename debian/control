@@ -12,6 +12,6 @@ Vcs-Browser: https://github.com/epicsdeb/agilent33220A
 Package: agilent33220a-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${epics:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${epics:Depends}, epics-stream-dev
 Description: EPICS support for Agilent 33220A
  Stream Device support for Agilent 33220A arbitrary waveform generator.
